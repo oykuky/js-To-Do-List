@@ -1,0 +1,19 @@
+.ul-items{
+    background-color: rgba(103, 223, 223, 0.256);
+    list-style: none;
+
+    
+}
+
+.ul-items input[type="text"] {
+    border-radius: 11px;
+    
+    
+}
+
+.ul-items button{
+    border-radius: 9px;
+    background-color: white;
+    
+    
+}
