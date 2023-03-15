@@ -14,11 +14,12 @@ function clicked(){
                                    ${document.querySelector("#newTask input").value}
                             </span>
                             <button class="del">
-                            <i class="far fa-trash-alt"></i>
+                            <i class="fa-solid fa-minus"></i>
                             </button>
+                           
                      </div>
                      `;
-
+                     
                      var currentTsk=document.querySelectorAll(".del");
                      for(var i=0;i<currentTsk.length;i++){
                             currentTsk[i].onclick=function(){
@@ -28,7 +29,7 @@ function clicked(){
                      }
               }
 
-       
+              document.querySelector('#newTask input').value=''; //remove textbox content after clicked after button
        } 
 
 
