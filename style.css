@@ -4,6 +4,11 @@
     height: 200px;
     background-color: white;
 }
+
+#sticky-add{
+    position: sticky;
+    top:15px;
+}
 .box2{
     border:2px solid rgba(0, 0, 0, 0.23);
     border-radius: 15px;
@@ -17,17 +22,42 @@
     background-color: rgba(103, 223, 223, 0.256);
     list-style: none;
 
-    
+
 }
 
 .ul-items input[type="text"] {
     border-radius: 11px;
-
-    
 }
 
+.tasks button{
+    background-color:rgba(119, 139, 235,1.0);
+    color: #ffffff;
+    height: 100%;
+    width: 35px;
+    font-size:16px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.tasks{
+    background-color:rgb(173, 217, 223);
+    height: 45px;
+    display: flex;
+    padding: 5px 10px;
+	margin-bottom: 9px;
+	border-radius: 17px;
+    align-items:center ;  /*y*/
+    justify-content: space-between; /*x*/
+    cursor: pointer;
+    border: 1px solid #939697;
+   
+}
+
+
 .btn-add{
-    background-color: #f7d794;
+    background-color: rgba(248, 165, 194,1.0);
     border-radius: 12px;
     border-style: none;
     width: 70px;
