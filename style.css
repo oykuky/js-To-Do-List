@@ -1,3 +1,18 @@
+.box1{
+    border:2px solid rgba(0, 0, 0, 0.23);
+    border-radius: 15px;
+    height: 200px;
+    background-color: white;
+}
+.box2{
+    border:2px solid rgba(0, 0, 0, 0.23);
+    border-radius: 15px;
+    background-color: white;
+    max-height: max-content; 
+    /* search this */
+}
+
+
 .ul-items{
     background-color: rgba(103, 223, 223, 0.256);
     list-style: none;
@@ -7,13 +22,19 @@
 
 .ul-items input[type="text"] {
     border-radius: 11px;
-    
+
     
 }
 
-.ul-items button{
-    border-radius: 9px;
-    background-color: white;
-    
-    
+.btn-add{
+    background-color: #f7d794;
+    border-radius: 12px;
+    border-style: none;
+    width: 70px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    color: azure;
+
 }
+
