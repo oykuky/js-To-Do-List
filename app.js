@@ -5,7 +5,7 @@ btnD.addEventListener("click", clicked);
 
 function clicked(){
        if(document.querySelector('#newTask input').value.length == 0){
-              alert("Lütfen görev ekleyiniz.");
+              alert("Please add a task.");
        }
               else{
                      document.querySelector('#tasks').innerHTML += `
@@ -13,16 +13,18 @@ function clicked(){
                             <span id="taskname">
                                    ${document.querySelector("#newTask input").value}
                             </span>
-                            <button class="del">
+                            <button class="delClick" onclick="return ask()">
                             <i class="fa-solid fa-minus"></i>
                             </button>
                            
                      </div>
                      `;
                      
-                     var currentTsk=document.querySelectorAll(".del");
+                     var currentTsk=document.querySelectorAll(".delClick");
                      for(var i=0;i<currentTsk.length;i++){
-                            currentTsk[i].onclick=function(){
+                            currentTsk[i].onclick=function ask (){
+                                   if(confirm("Kayıt co, Onaylıyormusunuz?")){}
+                                   else{ return false; }
                                    this.parentNode.remove();
                             }
 
@@ -31,5 +33,9 @@ function clicked(){
 
               document.querySelector('#newTask input').value=''; //remove textbox content after clicked after button
        } 
+
+
+
+
 
 
