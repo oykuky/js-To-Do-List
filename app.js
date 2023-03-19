@@ -14,33 +14,35 @@ function clicked(){
                                    ${document.querySelector("#newTask input").value}
                             </span>
                             <button class="delClick" onclick="return ask()">
+                            <i class="fa-solid fa-circle-check" style="font-size:20px;"></i>
+                            </button>
+                            <button class="compClick" onclick="return ask()">
                             <i class="fa-solid fa-minus"></i>
                             </button>
-                           
+                            
                      </div>
                      `;
-                     
+        
                      var currentTsk=document.querySelectorAll(".delClick");
+                     for(var i=0;i<currentTsk.length;i++){
+                            currentTsk[i].onclick=function ask (){
+                                   if(confirm("Remove task ?, Are you confirm?")){}
+                                   else{ return false; }
+                                   this.parentNode.remove();
+                                   
+                            }
+                         
+                     }
+
+                     var currentTsk=document.querySelectorAll(".compClick");
                      for(var i=0;i<currentTsk.length;i++){
                             currentTsk[i].onclick=function ask (){
                                    if(confirm("Task add to completed list ?, Are you confirm?")){}
                                    else{ return false; }
-                                   this.parentNode.remove();
-                                   document.querySelector('#completed-task').innerHTML += `
-                                   <div id="completed-tasks">
-  
-                                          <span id="ctaskname">
-                                                 ${document.querySelector('#ctaskname input').value}
-                                          </span>
-                                          
-
-                                   </div>
-                                   `;
+                                   this.parentNode.
+                                   
                             }
-                            
-                            
-                                  
-                            
+                         
                      }
                     
               }
