@@ -16,7 +16,7 @@ function clicked(){
                             <button class="delClick" onclick="return ask()">
                             <i class="fa-solid fa-circle-check" style="font-size:20px;"></i>
                             </button>
-                            <button class="compClick" onclick="return ask()">
+                            <button class="compClick" >
                             <i class="fa-solid fa-minus"></i>
                             </button>
                             
@@ -34,16 +34,7 @@ function clicked(){
                          
                      }
 
-                     var currentTsk=document.querySelectorAll(".compClick");
-                     for(var i=0;i<currentTsk.length;i++){
-                            currentTsk[i].onclick=function ask (){
-                                   if(confirm("Task add to completed list ?, Are you confirm?")){}
-                                   else{ return false; }
-                                   this.parentNode.
-                                   
-                            }
-                         
-                     }
+                     
                     
               }
 
@@ -55,19 +46,13 @@ function clicked(){
 
 
 
-       // const btnDel=document.getElementById("delClick");
-       // btnDel.addEventListener("click", delclicked);
-       // function delclicked(){
-       //        document.querySelector('#completed-task').innerHTML += `
-       //               <div id="completed-tasks">
-
-       //                      <span id="taskname">
-       //                             ${document.querySelector('#newTask input').value}
-       //                      </span>
-       //                      <button class="delClick" onclick="return ask()">
-       //                      <i class="fa-solid fa-minus"></i>
-       //                      </button>
-
-       //               </div>
-       //               `;
+       // var currentTsk=document.querySelectorAll(".compClick");
+       // for(var i=0;i<currentTsk.length;i++){
+       //        currentTsk[i].onclick=function ask (){
+       //               if(confirm("Task add to completed list ?, Are you confirm?")){}
+       //               else{ return false; }
+       //               this.parentNode.
+                     
+       //        }
+           
        // }
