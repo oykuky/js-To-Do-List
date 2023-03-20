@@ -65,11 +65,11 @@ function clicked(){
        const rmvC =document.getElementById('rClck');
        rmvC.onclick=function clear(){
       
-             var toDoItems = tasks.children;
-             while (toDoItems.length > 0) {
-                 toDoItems.item(0).remove();
+             var items = tasks.children;
+             while (items.length > 0) {
+                 items.item(0).remove();
              }
+            
              document.querySelector("#newTask input").focus(); 
              document.querySelector('#newTask input').value='';
          }
-
