@@ -6,21 +6,28 @@
     background-size:cover;
     text-align: center;
     font-family:monospace;
-
 }
 
 .container{
     margin-top:-84px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode','Lucida Sans', Arial, sans-serif;
 }
 
 .box1{
-    border:2px solid rgba(0, 0, 0, 0.23);
+    border:4px solid rgba(31, 18, 222, 0.23);
     border-radius: 15px;
     height: 200px;
-    background-color: white;
+    background-color: rgb(28, 23, 23);
 }
-#btnClick:hover{
+
+
+.box1:hover{
     box-shadow: 6px 0px 6px 6px rgb(149, 118, 212);
+   
+}
+
+#btnClick:hover{
+    box-shadow: 3px 0px 3px 3px rgb(226, 224, 229);
 }
 
 .btn-add{
@@ -35,19 +42,23 @@
 
 }
 
-
-
 #sticky-add{
     position: sticky;
     top:15px;
 }
+
+
 .box2{
-    border:2px solid rgba(0, 0, 0, 0.23);
+    border:4px solid rgba(31, 18, 222, 0.23);
     border-radius: 15px;
-    background-color: white;
+    background-color: rgb(28, 23, 23);
     max-height: max-content; 
+    color: #ffffff;
 }
 
+.box2:hover{
+    box-shadow: 6px 0px 6px 6px rgb(149, 118, 212);
+}
 
 .ul-items{
     background-color: rgba(103, 223, 223, 0.256);
@@ -60,7 +71,7 @@
 }
 
 .delClick{
-    background-color:rgba(119, 139, 235,1.0);
+    background-color:#0915f6;
     color: #ffffff;
     height: 100%;
     width: 35px;
@@ -75,7 +86,7 @@
 .compClick{
     background-color: transparent;
     font-size:33px;
-    color:rgba(119, 139, 235,1.0);
+    color:#0915f6;
     height: 100%;
     width:max-content;
     margin-right:4px;
@@ -89,7 +100,7 @@
 }
 
 .tasks{
-    background-color:rgb(173, 217, 223);
+    background-color:rgba(33, 12, 53, 0.858);
     height: 45px;
     display: flex;
     padding: 5px 10px;
@@ -99,6 +110,7 @@
     border: 1px solid #939697;
    
 }
+
 
 #taskname{
  display: flex;
