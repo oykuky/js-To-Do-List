@@ -1,9 +1,41 @@
+#header{
+    background-color: #4834d4;
+    height:400px;
+    background-image:url(web.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+    font-family:monospace;
+
+}
+
+.container{
+    margin-top:-84px;
+}
+
 .box1{
     border:2px solid rgba(0, 0, 0, 0.23);
     border-radius: 15px;
     height: 200px;
     background-color: white;
 }
+#btnClick:hover{
+    box-shadow: 6px 0px 6px 6px rgb(149, 118, 212);
+}
+
+.btn-add{
+    background-color: #130f40;
+    border-radius: 12px;
+    border-style: none;
+    width: 70px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    color: azure;
+
+}
+
+
 
 #sticky-add{
     position: sticky;
@@ -14,7 +46,6 @@
     border-radius: 15px;
     background-color: white;
     max-height: max-content; 
-    /* search this */
 }
 
 
@@ -25,9 +56,10 @@
 
 .ul-items input[type="text"] {
     border-radius: 11px;
+    
 }
 
-.tasks button{
+.delClick{
     background-color:rgba(119, 139, 235,1.0);
     color: #ffffff;
     height: 100%;
@@ -38,9 +70,22 @@
     cursor: pointer;
     outline: none;
     margin-right:4px;
- 
-   
-    
+}
+
+.compClick{
+    background-color: transparent;
+    font-size:33px;
+    color:rgba(119, 139, 235,1.0);
+    height: 100%;
+    width:max-content;
+    margin-right:4px;
+    margin-top: 1px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
 }
 
 .tasks{
@@ -60,16 +105,4 @@
  margin-right:auto;
 }
 
-
-.btn-add{
-    background-color: rgba(248, 165, 194,1.0);
-    border-radius: 12px;
-    border-style: none;
-    width: 70px;
-    height: 40px;
-    font-size: 15px;
-    font-weight: 600;
-    color: azure;
-
-}
 
