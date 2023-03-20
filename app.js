@@ -22,7 +22,7 @@ function clicked(){
                             
                      </div>
                      `;
-                     let completedTsk=document.querySelectorAll(".compClick"); //tum complclick butonlarının listesini olusturur(nodelist)
+                     var completedTsk=document.querySelectorAll(".compClick"); //tum complclick butonlarının listesini olusturur(nodelist)
                      for(let j=0;j<completedTsk.length;j++){
                             completedTsk[j].onclick=function askq (){
                                    let  sty=this.parentNode.querySelector("#taskname") // burada parentNode kullanarak, tıklanan butonun ebeveyn öğesini seçiyoruz
@@ -31,7 +31,7 @@ function clicked(){
                                    let btnsty=this.parentNode.querySelector(".compClick")
                                    btnsty.style.cssText="color:green;";
                                    this.parentNode.style.backgroundColor = "gray"; //div ogesi seçildi
-
+                                   this.parentNode.style.border= "gray";
                             }
                          
                      }
@@ -45,12 +45,9 @@ function clicked(){
                                    else{ return false; }
                                    this.parentNode.remove();
                                    document.querySelector("#newTask input").focus(); //textbox ı fokuslar
-                                   
                             }
                          
                      }
-
-                    
               }
 
               document.querySelector('#newTask input').value=''; //remove textbox content after clicked after button
