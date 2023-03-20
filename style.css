@@ -22,7 +22,7 @@
 
 
 .box1:hover{
-    box-shadow: 6px 0px 6px 6px rgb(149, 118, 212);
+    box-shadow: 6px 0px 6px 6px rgb(88, 7, 250);
    
 }
 
@@ -47,7 +47,6 @@
     top:15px;
 }
 
-
 .box2{
     border:4px solid rgba(31, 18, 222, 0.23);
     border-radius: 15px;
@@ -57,7 +56,7 @@
 }
 
 .box2:hover{
-    box-shadow: 6px 0px 6px 6px rgb(149, 118, 212);
+    box-shadow: 6px 0px 6px 6px rgb(88, 7, 250);
 }
 
 .ul-items{
@@ -71,7 +70,7 @@
 }
 
 .delClick{
-    background-color:#0915f6;
+    background-color:#02065d;
     color: #ffffff;
     height: 100%;
     width: 35px;
@@ -86,7 +85,7 @@
 .compClick{
     background-color: transparent;
     font-size:33px;
-    color:#0915f6;
+    color:#02065d;
     height: 100%;
     width:max-content;
     margin-right:4px;
@@ -100,21 +99,26 @@
 }
 
 .tasks{
-    background-color:rgba(33, 12, 53, 0.858);
+    background-color:rgba(0, 1, 6, 0.048);
     height: 45px;
     display: flex;
     padding: 5px 10px;
 	margin-bottom: 9px;
 	border-radius: 17px;
     cursor: pointer;
-    border: 1px solid #939697;
-   
+    border: 1px solid #0f0475;
+    font-size: 17px;
 }
-
 
 #taskname{
- display: flex;
- margin-right:auto;
+    display: flex;
+    margin-right:auto;
 }
-
-
+#newTask input{
+       border-radius: 17px;
+       height: 45px;
+       background-color:rgba(0, 1, 6, 0.048);
+       color: #ffffff;
+       border:2px solid #0f0475;
+}
+   
