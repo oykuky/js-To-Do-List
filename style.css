@@ -27,6 +27,7 @@
 
 #btnClick:hover{
     box-shadow: 3px 0px 3px 3px rgb(226, 224, 229);
+    zoom: 1.15;
 }
 
 .btn-add{
@@ -38,7 +39,6 @@
     font-size: 15px;
     font-weight: 600;
     color: azure;
-
 }
 
 #sticky-add{
@@ -86,21 +86,39 @@
     align-items: center;
 
 }
-.rmvAll{
+.rmvAllbtn{
     background-color: transparent;
     font-size:27px;
-    color:#858dfa;
+    color:#979ef3;
     width:max-content;
     border-radius: 25px;
     border: none;
     cursor: pointer;
     margin-bottom:12px;
-    margin-left:10px;
+    margin-left:100px;
     
 }
 
+.rmvAllbtn:focus{
+    color:aliceblue;
+    zoom:1.13;
+}
+
+#removeAlign{
+    background-color: #04020d6e;
+    border-radius: 25px;
+    height: 45px;
+    margin-bottom: 23px;
+    border: 1px solid #0f0475;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
 #rmvspan{
     font-size: 18px;
+    padding-top: 10px;
 }
 .tasks{
     background-color:rgba(0, 1, 6, 0.048);
