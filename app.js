@@ -16,8 +16,8 @@ function clicked(){
                                    ${document.querySelector("#newTask input").value}
                             </span>
                             
-                            <button class="compClick" onclick="return askq()" >
-                            <i class="fa-solid fa-circle-check" style="font-size:20px;"></i>
+                            <button class="compClick" onclick="return askq()">
+                            <i class="fa-solid fa-circle-check"></i>
                             </button>
                             <button class="delClick" onclick="return ask()">
                             <i class="fa-solid fa-minus"></i>
