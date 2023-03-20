@@ -7,7 +7,6 @@
     text-align: center;
     font-family:monospace;
 }
-
 .container{
     margin-top:-84px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode','Lucida Sans', Arial, sans-serif;
@@ -59,16 +58,6 @@
     box-shadow: 6px 0px 6px 6px rgb(88, 7, 250);
 }
 
-.ul-items{
-    background-color: rgba(103, 223, 223, 0.256);
-    list-style: none;
-}
-
-.ul-items input[type="text"] {
-    border-radius: 11px;
-    
-}
-
 .delClick{
     background-color:#02065d;
     color: #ffffff;
@@ -97,7 +86,22 @@
     align-items: center;
 
 }
+.rmvAll{
+    background-color: transparent;
+    font-size:27px;
+    color:#858dfa;
+    width:max-content;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-bottom:12px;
+    margin-left:10px;
+    
+}
 
+#rmvspan{
+    font-size: 18px;
+}
 .tasks{
     background-color:rgba(0, 1, 6, 0.048);
     height: 45px;
