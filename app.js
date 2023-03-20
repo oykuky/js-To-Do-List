@@ -25,16 +25,17 @@ function clicked(){
                             
                      </div>
                      `;
-                     let completedTsk=document.querySelectorAll(".compClick"); //tum complclick butonlarının listesini olusturur
+                     let completedTsk=document.querySelectorAll(".compClick"); //tum complclick butonlarının listesini olusturur(nodelist)
                      for(let j=0;j<completedTsk.length;j++){
                             completedTsk[j].onclick=function askq (){
-                                   if(confirm("Task add to completed list ?, Are you confirm?")){}
-                                   else{ return false; }
                                    let  sty=this.parentNode.querySelector("#taskname") // burada parentNode kullanarak, tıklanan butonun ebeveyn öğesini seçiyoruz
                                    sty.style.cssText=" text-decoration:line-through; color:green;";
                                    // tıklanan butonun ebeveyn öğesini seçer ve bu öğenin altında #taskname öğesini arar.
                                    let btnsty=this.parentNode.querySelector(".compClick")
                                    btnsty.style.cssText="color:green";
+                                   let txtinpt =this.parentNode.querySelector(".tasks")
+                                   txtinpt.style="background-color:red";
+                                 
                             }
                          
                      }
@@ -47,6 +48,7 @@ function clicked(){
                                    if(confirm("Remove task ?, Are you confirm?")){}
                                    else{ return false; }
                                    this.parentNode.remove();
+                                   document.querySelector("#newTask input").focus(); //textbox ı fokuslar
                                    
                             }
                          
