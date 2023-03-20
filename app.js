@@ -21,19 +21,8 @@ function clicked(){
                      </div>
                      `;
 
-                     document.querySelector('#remove').innerHTML = `
-                     <span id="rmvspan">Remove All</span>
-                     <button class="rmvAll" id="rClck" onclick="return ask3()">
-                     <i class="fa-solid fa-trash"></i>
-                     </button>
-                     `;
-
-                     const rmvC =document.getElementById('rClck');
-                     rmvC.onclick=function remove(){
-                            let rm=document.querySelectorAll(".tasks");
-                            rm.remove();
-                     }
-
+                   
+                     
                      var completedTsk=document.querySelectorAll(".compClick"); //tum complclick butonlarının listesini olusturur(nodelist)
                      for(let j=0;j<completedTsk.length;j++){
                             completedTsk[j].onclick=function askq (){
@@ -61,9 +50,26 @@ function clicked(){
                          
                      }
               }
-
               document.querySelector('#newTask input').value=''; //remove textbox content after clicked after button
+
+             
        } 
 
+       document.querySelector('#remove').innerHTML = `
+       <span id="rmvspan">Remove All</span>
+       <button class="rmvAll" id="rClck" onclick="return ask3()">
+       <i class="fa-solid fa-trash"></i>
+       </button>
+       `;
 
+       const rmvC =document.getElementById('rClck');
+       rmvC.onclick=function clear(){
+      
+             var toDoItems = tasks.children;
+             while (toDoItems.length > 0) {
+                 toDoItems.item(0).remove();
+             }
+             document.querySelector("#newTask input").focus(); 
+             document.querySelector('#newTask input').value='';
+         }
 
