@@ -55,9 +55,9 @@ function clicked(){
              
        } 
 
-       document.querySelector('#remove').innerHTML = `
+       document.querySelector('#removeAlign').innerHTML = `
        <span id="rmvspan">Remove All</span>
-       <button class="rmvAll" id="rClck" onclick="return ask3()">
+       <button class="rmvAllbtn" id="rClck" onclick="return ask3()">
        <i class="fa-solid fa-trash"></i>
        </button>
        `;
