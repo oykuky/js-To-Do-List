@@ -1,7 +1,4 @@
 
-
-
-
 const btnD =document.getElementById("btnClick");
 btnD.addEventListener("click", clicked);
 
@@ -32,10 +29,9 @@ function clicked(){
                                    sty.style.cssText=" text-decoration:line-through; color:green;";
                                    // tıklanan butonun ebeveyn öğesini seçer ve bu öğenin altında #taskname öğesini arar.
                                    let btnsty=this.parentNode.querySelector(".compClick")
-                                   btnsty.style.cssText="color:green";
-                                   let txtinpt =this.parentNode.querySelector(".tasks")
-                                   txtinpt.style="background-color:red";
-                                 
+                                   btnsty.style.cssText="color:green;";
+                                   this.parentNode.style.backgroundColor = "gray"; //div ogesi seçildi
+
                             }
                          
                      }
