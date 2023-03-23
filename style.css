@@ -69,6 +69,10 @@
     outline: none;
     margin-right:4px;
 }
+.delClick:hover{
+    background-color:rgb(244, 20, 4);
+    zoom:1.1;
+}
 
 .compClick{
     background-color: transparent;
