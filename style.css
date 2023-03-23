@@ -22,7 +22,6 @@
 
 .box1:hover{
     box-shadow: 6px 0px 6px 6px rgb(88, 7, 250);
-   
 }
 
 #btnClick:hover{
@@ -86,6 +85,10 @@
     align-items: center;
 
 }
+.compClick:hover{
+    color:rgb(71, 248, 85);
+    zoom:1.1;
+}
 .rmvAllbtn{
     background-color: transparent;
     font-size:27px;
@@ -96,7 +99,6 @@
     cursor: pointer;
     margin-bottom:12px;
     margin-left:100px;
-    
 }
 
 .rmvAllbtn:focus{

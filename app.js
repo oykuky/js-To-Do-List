@@ -27,10 +27,10 @@ function clicked(){
                      for(let j=0;j<completedTsk.length;j++){
                             completedTsk[j].onclick=function askq (){
                                    let  sty=this.parentNode.querySelector("#taskname") // burada parentNode kullanarak, tıklanan butonun ebeveyn öğesini seçiyoruz
-                                   sty.style.cssText=" text-decoration:line-through; color:green;";
+                                   sty.style.cssText=" text-decoration:line-through; color:rgb(6, 252, 26);";
                                    // tıklanan butonun ebeveyn öğesini seçer ve bu öğenin altında #taskname öğesini arar.
                                    let btnsty=this.parentNode.querySelector(".compClick")
-                                   btnsty.style.cssText="color:green;";
+                                   btnsty.style.cssText="color:rgb(6, 252, 26);";
                                    this.parentNode.style.backgroundColor = "gray"; //div ogesi seçildi
                                    this.parentNode.style.border= "gray";
                             }
@@ -57,7 +57,7 @@ function clicked(){
 
        document.querySelector('#removeAlign').innerHTML = `
        <span id="rmvspan">Remove All</span>
-       <button class="rmvAllbtn" id="rClck" onclick="return ask3()">
+       <button class="rmvAllbtn" id="rClck">
        <i class="fa-solid fa-trash"></i>
        </button>
        `;
