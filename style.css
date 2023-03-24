@@ -1,7 +1,7 @@
 #header{
     background-color: #4834d4;
     height:400px;
-    background-image:url(/img/web.jpg) ;
+    background-image:url(./img/web.jpg) ;
     background-repeat: no-repeat;
     background-size:cover;
     text-align: center;
